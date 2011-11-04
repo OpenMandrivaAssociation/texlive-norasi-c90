@@ -1,5 +1,11 @@
+# revision 15878
+# category Package
+# catalog-ctan undef
+# catalog-date undef
+# catalog-license undef
+# catalog-version undef
 Name:		texlive-norasi-c90
-Version:	20111102
+Version:	20111103
 Release:	1
 Summary:	TeX support (from CJK) for the norasi font in thailatex
 Group:		Publishing
@@ -41,6 +47,7 @@ TeXLive norasi-c90 package.
 %{_texmfdistdir}/fonts/tfm/public/norasi-c90/ftnr8z.tfm
 #- source
 %doc %{_texmfdistdir}/source/fonts/norasi-c90/norasi-c90.fontinst
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -51,3 +58,5 @@ TeXLive norasi-c90 package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar dvips fonts source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
