@@ -49,3 +49,17 @@ TeXLive norasi-c90 package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar dvips fonts source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20111103-2
++ Revision: 754400
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20111103-1
++ Revision: 719131
+- texlive-norasi-c90
+- texlive-norasi-c90
+- texlive-norasi-c90
+- texlive-norasi-c90
+
