@@ -1,13 +1,13 @@
-# revision 15878
+# revision 30642
 # category Package
 # catalog-ctan undef
 # catalog-date undef
 # catalog-license undef
 # catalog-version undef
 Name:		texlive-norasi-c90
-Version:	20111103
-Release:	2
-Summary:	TeX support (from CJK) for the norasi font in thailatex
+Version:	20131010
+Release:	1
+Summary:	TeX support (from CJK) for the norasi font
 Group:		Publishing
 URL:		http://tug.org/texlive
 License:	http://www.tug.org/texlive/LICENSE.TL
@@ -17,6 +17,7 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
+Requires:	texlive-fonts-tlwg
 
 %description
 TeXLive norasi-c90 package.
@@ -49,17 +50,3 @@ TeXLive norasi-c90 package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar dvips fonts source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20111103-2
-+ Revision: 754400
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20111103-1
-+ Revision: 719131
-- texlive-norasi-c90
-- texlive-norasi-c90
-- texlive-norasi-c90
-- texlive-norasi-c90
-
