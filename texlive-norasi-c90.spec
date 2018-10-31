@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-norasi-c90
 Version:	20180303
-Release:	1
+Release:	2
 Summary:	TeX support (from CJK) for the norasi font
 Group:		Publishing
 URL:		http://tug.org/texlive
