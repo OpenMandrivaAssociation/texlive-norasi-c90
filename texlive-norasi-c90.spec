@@ -1,6 +1,6 @@
 Name:		texlive-norasi-c90
 Version:	60831
-Release:	1
+Release:	2
 Summary:	TeX support (from CJK) for the norasi font
 Group:		Publishing
 URL:		http://tug.org/texlive
