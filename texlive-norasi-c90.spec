@@ -3,7 +3,7 @@ Version:	60831
 Release:	2
 Summary:	TeX support (from CJK) for the norasi font
 Group:		Publishing
-URL:		http://tug.org/texlive
+URL:		https://tug.org/texlive
 License:	http://www.tug.org/texlive/LICENSE.TL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/norasi-c90.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/norasi-c90.source.r%{version}.tar.xz
