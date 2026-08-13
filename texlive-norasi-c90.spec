@@ -13,8 +13,16 @@ Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/norasi-c90.sourc
 BuildArch:	noarch
 BuildSystem:	texlive
 Requires:	texlive(fonts-tlwg)
-Provides:	texlive(%{tl_name}) = %{tl_revision}
+Requires:	texlive-tlpkg
+Provides:	texlive(%{tl_name}) = %{version}
 
 %description
 TeX support (from CJK) for the norasi font
 
+
+%install -a
+mkdir -p %{buildroot}%{_texmf_updmap_d}
+cat > %{buildroot}%{_texmf_updmap_d}/%{tl_name} <<'TL_DROPIN_EOF'
+# from norasi-c90:
+Map norasi-c90.map
+TL_DROPIN_EOF
