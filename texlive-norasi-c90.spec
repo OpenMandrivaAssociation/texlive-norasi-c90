@@ -3,7 +3,7 @@
 
 Name:		texlive-%{tl_name}
 Version:	%{tl_revision}
-Release:	1
+Release:	3
 Summary:	TeX support (from CJK) for the norasi font
 Group:		Publishing
 URL:		https://www.ctan.org/pkg/norasi-c90
