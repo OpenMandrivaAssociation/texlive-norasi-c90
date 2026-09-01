@@ -26,3 +26,5 @@ cat > %{buildroot}%{_texmf_updmap_d}/%{tl_name} <<'TL_DROPIN_EOF'
 # from norasi-c90:
 Map norasi-c90.map
 TL_DROPIN_EOF
+echo '%dir %{_texmf_updmap_d}' >> %{specpartsdir}/%{name}.files.specpart
+echo '%{_texmf_updmap_d}/%{tl_name}' >> %{specpartsdir}/%{name}.files.specpart
